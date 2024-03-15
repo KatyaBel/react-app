@@ -1,0 +1,772 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "ManropeLight";
+  src: url(./fonts/Manrope-Light.ttf);
+}
+@font-face {
+  font-family: "ManropeRegular";
+  src: url(./fonts/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: "ManropeMedium";
+  src: url(./fonts/Manrope-Medium.ttf);
+}
+@font-face {
+  font-family: "ManropeBold";
+  src: url(./fonts/Manrope-Bold.ttf);
+}
+@font-face {
+  font-family: "ManropeExtraBold";
+  src: url(./fonts/Manrope-ExtraBold.ttf);
+}
+
+/*Общее*/
+* {
+  margin: auto;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  margin: 0;
+}
+.hidden {
+  display: none !important;
+}
+body {
+  //background: #040d1a;
+  background-size: cover;
+  overflow-x: hidden;
+}
+.page {
+  max-width: 1400px;
+}
+
+/*Шапка*/
+.nav {
+  margin-bottom: 60px;
+  display: flex;
+  color: white;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #040d1a;
+  padding: 35px 20px;
+}
+.logo_burger {
+  display: flex;
+}
+.nav .logo {
+  font-family: "ManropeExtraBold", sans-serif;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+.burger_open {
+  cursor: pointer;
+}
+.burger_close {
+  cursor: pointer;
+}
+.b1, .b2, .b3 {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+.burger_close .b1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger_close .b2 {
+  opacity: 0;
+}
+.burger_close .b3 {
+  transform: rotate(-45deg) translate(7px, -5px);
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.nav ul {
+  display: flex;
+  gap: 30px;
+  font-family: "ManropeMedium", sans-serif;
+  font-size: 18px;
+  list-style-type: none;
+}
+.nav ul li {
+  border-bottom: 2px solid transparent;
+}
+.nav ul li:hover {
+  cursor: pointer;
+  border-color: white;
+}
+.nav ul .active {
+  color: #f49867;
+  border-bottom: 2px solid #f49867;
+}
+.nav ul .active:hover {
+  border-color: #f49867;
+}
+.nav .buttons {
+  display: flex;
+  gap: 15px;
+  font-family: "ManropeMedium", sans-serif;
+}
+.nav .btn {
+  font-size: 18px;
+  color: white;
+  padding: 18px;
+  border-radius: 5px;
+  border: none;
+}
+.btn1 {
+  background-color: inherit;
+}
+.btn2 {
+  background-color: #FF4820;
+}
+.nav .btn:hover {
+  cursor: pointer;
+  background-color: #ae67fa;
+}
+/*Голова*/
+.hero {
+  width: 95%;
+  display: flex;
+  margin-bottom: 90px;
+}
+.hero_left {
+  margin-left: 40px;
+}
+.hero_top {
+  margin-bottom: 40px;
+  font-family: "ManropeExtraBold", sans-serif;
+  font-size: 56px;
+  background-image: linear-gradient(to right, #AE67FA 0%, #F49867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero_middle {
+  margin-bottom: 50px;
+  font-family: "ManropeRegular", sans-serif;
+  font-size: 20px;
+  color: #81AFDD;
+}
+.hero form {
+  display: flex;
+  margin-bottom: 25px;
+}
+.mail {
+  flex-grow: 1;
+  background-color: #052D56;
+  font-family: "ManropeRegular", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  color: white;
+}
+::placeholder {
+  color: #92AAC1;
+}
+.btn3 {
+  background-color: #FF4820;
+  font-family: "ManropeBold", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
+.btn3:hover {
+  cursor: pointer;
+  background-color: #ae67fa;
+}
+.hero_bottom {
+  display: flex;
+}
+.hero_bottom p {
+  margin-left: 10px;
+  font-family: "ManropeMedium", sans-serif;
+  font-size: 12px;
+  color: white;
+}
+.hero_right {
+  min-width: 45%;
+}
+.hero_right img {
+  display: block;
+  margin: auto;
+}
+
+/*Бренды*/
+.brands {
+  margin-bottom: 100px;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.brands img:hover {
+  cursor: pointer;
+}
+.card_h {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  font-family: "ManropeExtraBold", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+.card_p {
+  font-family: "ManropeMedium", sans-serif;
+  font-size: 16px;
+  color: #81AFDD;
+}
+.text1 {
+  margin-left: 0;
+  margin-bottom: 10px;
+  font-family: "ManropeExtraBold", sans-serif;
+  font-size: 34px;
+  background-image: linear-gradient(to right, #AE67FA 0%, #F49867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text2 {
+  font-family: "ManropeMedium", sans-serif;
+  font-size: 16px;
+  color: #FF8A71;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+}
+.text2:hover {
+  border-color: #FF8A71;
+}
+
+/*Что такое gpt*/
+.what {
+  width: 90%;
+  background: url("./img/bg.png") 0 0 /cover;
+  border: 1px solid transparent;
+  margin-bottom: 180px;
+}
+.what_ins {
+  margin: 50px 45px;
+}
+.what_top {
+  display: flex;
+  margin-bottom: 80px;
+}
+.what_top .card_h {
+  margin-top: 0;
+  min-width: 30%;
+  position: relative;
+}
+.what_top .card_h p {
+  margin-top: 10px;
+}
+.what_top .card_h img {
+  position: absolute;
+  top: 0;
+}
+.what_middle {
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 0;
+}
+.what_middle .text1 {
+  width: 50%;
+}
+.what_middle .text2 {
+  text-align: right;
+  margin-top: 0;
+}
+.what_middle .text2:hover {
+  cursor: pointer;
+}
+.what_bottom {
+  display: flex;
+  gap: 20px;
+}
+.what_bottom .text2 {
+  width: 100%;
+}
+.what_bottom .card_h {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/*Будущее наступило*/
+.future {
+  width: 90%;
+  display: flex;
+}
+.future_left {
+  width: 45%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+.future_left .text1 {
+  width: 85%;
+}
+.future_left .text2 {
+  margin-top: 20px;
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+.future_left .text2:hover {
+  cursor: pointer;
+}
+.future_right {
+  width: 55%;
+}
+.future_right .card {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.future_right .card .card_h {
+  min-width: 35%;
+  margin-top: 0;
+  margin-left: 0;
+  position: relative;
+}
+.future_right .card_h img {
+  position: absolute;
+  top: 0;
+}
+.future_right .card_h p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.future_right .card .card_p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+/*Превосходя ожидания*/
+.expect {
+  width: 90%;
+  margin-bottom: 150px;
+}
+.expect_ins {
+  display: flex;
+  gap: 20px;
+  margin: 50px 45px;
+}
+.expect_left {
+  min-width: 50%;
+}
+.expect_right {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6%;
+}
+.expect_right p {
+  margin-left: 0;
+}
+.expect_right .text2:hover {
+  cursor: pointer;
+}
+.expect_right .link {
+  color: #71E5FF;
+  margin-bottom: 20px;
+}
+.expect_right .link:hover {
+  border-color: #71E5FF;
+}
+.expect_right .text1 {
+  margin-bottom: 25px;
+}
+.expect_right .card_p {
+  font-family: "ManropeMedium", sans-serif;
+  margin-bottom: 30px;
+}
+
+/*Плашка с кнопкой*/
+.sign {
+  width: 90%;
+  display: flex;
+  background: linear-gradient(to right, #AE67FA, #F49867);
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+.sign_left {
+  width: 60%;
+  margin: 25px 45px;
+  display: flex;
+  flex-direction: column;
+}
+.sign_text1 {
+  font-family: "ManropeMedium", sans-serif;
+  font-size: 12px;
+  border-bottom: 1px solid transparent;
+  margin-left: 0;
+}
+.sign_text1:hover {
+  cursor: pointer;
+  border-color: black;
+}
+.sign_text2 {
+  font-family: "ManropeExtraBold", sans-serif;
+  font-size: 24px;
+}
+.sign_right {
+  margin-right: 20px;
+}
+.btn4 {
+  font-family: "ManropeBold", sans-serif;
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 30px;
+  border: none;
+}
+.btn4:hover {
+  cursor: pointer;
+  background-color: #ae67fa;
+}
+
+/*Статьи*/
+.articles {
+  width: 90%;
+  margin-bottom: 50px;
+}
+.articles .text1 {
+  width: 85%;
+  margin-bottom: 50px;
+  font-size: 65px;
+}
+.articles_top {
+  display: flex;
+}
+.articles_top .card_main {
+  min-width: 33%;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.articles_top .card_main .card {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.articles_top .card_main .card .card_content {
+  flex-grow: 1;
+  position: relative;
+}
+.articles_top .cards_right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.articles_top .cards_right .card {
+  width: 45%;
+}
+.articles_bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+.articles_bottom .card {
+  width: 30%;
+}
+.articles_content .card {
+  margin-bottom: 35px;
+}
+.articles_content .card_content {
+  margin-top: -5px;
+  padding: 25px;
+  background-color: #042C54;
+}
+.articles_content .card_t {
+  font-family: "ManropeLight", sans-serif;
+  font-size: 12px;
+  color: white;
+}
+.articles_content .card_h {
+  margin-bottom: 30px;
+}
+.articles_content .link {
+  cursor: pointer;
+  display: inline;
+  border-bottom: 1px solid transparent;
+}
+.articles_content .link:hover {
+  border-color: white;
+}
+.articles_content .card_read {
+  position: absolute;
+  bottom: 25px;
+}
+
+/*Footer*/
+.footer {
+  width: 100%;
+  background-color: #031B34;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.footer .text1 {
+  font-size: 62px;
+  margin-top: 150px;
+}
+.btn5 {
+  font-family: "ManropeMedium", sans-serif;
+  background-color: inherit;
+  font-size: 18px;
+  color: white;
+  padding: 20px 50px;
+  border: 1px solid white;
+  margin-top: 50px;
+}
+.btn5:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.footer_bottom {
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.footer_bottom .logo {
+  width: 25%;
+  margin-top: 0;
+}
+.footer_bottom .logo img {
+  width: 40%;
+  margin-bottom: 10px;
+}
+.footer_bottom .logo p {
+  width: 60%;
+  margin: 0;
+}
+.footer_bottom .card {
+  width: 15%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer_text1 {
+  font-family: "ManropeBold", sans-serif;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.footer_text2 {
+  font-family: "ManropeLight", sans-serif;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 0;
+}
+.footer_bottom .card .link {
+  border-bottom: 1px solid transparent;
+}
+.footer_bottom .card .link:hover {
+  cursor: pointer;
+  border-color: white;
+}
+
+/*Медиа запросы*/
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+  }
+  .logo_burger {
+    width: 100%;
+    position: relative;
+  }
+  .nav .logo {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+  }
+  .burger_open {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+  .burger_close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .menu ul {
+    flex-direction: column;
+  }
+  .menu ul li {
+    font-size: 25px;
+  }
+  .nav .buttons {
+    margin-top: 15px;
+  }
+  .hero {
+    width: 85%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero_left {
+    margin-left: 0;
+  }
+  .hero form, .hero_bottom {
+    width: 90%;
+  }
+  .hero_right {
+    width: 60%;
+  }
+  .brands {
+    width: 80%;
+  }
+  .what {
+    margin-bottom: 100px;
+  }
+  .future {
+    flex-direction: column;
+  }
+  .future_left, .future_right {
+    width: 100%;
+  }
+  .future_left .text1 {
+    width: 100%;
+  }
+  .future_right .card {
+    gap: 80px;
+  }
+  .expect {
+    margin-bottom: 40px;
+  }
+  .expect_ins {
+    flex-direction: column-reverse;
+  }
+  .expect_left {
+    width: 80%;
+  }
+  .expect_right {
+    width: 100%;
+  }
+  .sign {
+    margin-bottom: 50px;
+  }
+  .articles .text1 {
+    font-size: 45px;
+  }
+  .articles_top, .articles_top .cards_right, .articles_bottom {
+    flex-direction: column;
+  }
+  .articles_top .card_main .card, .articles_top .cards_right .card, .articles_bottom .card {
+    width: 80%;
+  }
+  .articles_top .card_main {
+    margin-bottom: 0;
+  }
+  .articles_content .card_read {
+    position: relative;
+    bottom: 0;
+  }
+  .footer_bottom .logo p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero_top {
+    font-size: 30px;
+  }
+  .hero_middle {
+    font-size: 15px;
+  }
+  .mail {
+    font-size: 15px;
+  }
+  .btn3 {
+    font-size: 15px;
+  }
+  .hero_right {
+    width: 90%;
+  }
+  .what_top {
+    flex-direction: column;
+  }
+  .what_top .card_h {
+    min-width: 100%;
+  }
+  .what_middle {
+    flex-direction: column;
+  }
+  .what_middle .text1 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .what_middle .text2 {
+    margin-left: 0;
+    text-align: left;
+  }
+  .what_bottom {
+    flex-direction: column;
+  }
+  .future_left .text1 {
+    font-size: 25px;
+  }
+  .future_right .card {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .expect {
+    margin-top: 30px;
+  }
+  .expect_ins {
+    width: 100%;
+    margin: auto;
+  }
+  .sign {
+    flex-direction: column;
+  }
+  .sign_left {
+    width: auto;
+  }
+  .sign_right {
+    margin: auto;
+  }
+  .btn4 {
+    margin-bottom: 20px;
+  }
+  .articles_top .card_main .card, .articles_top .cards_right .card, .articles_bottom .card {
+    width: 100%;
+  }
+  .footer .text1 {
+    width: 90%;
+    font-size: 40px;
+    margin: 70px auto 0;
+  }
+  .footer_bottom {
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .footer_bottom .logo {
+    width: 60%;
+  }
+  .footer_bottom .logo img {
+    width: 30%;
+  }
+  .footer_bottom .card {
+    width: 60%;
+  }
+  .footer_text1 {
+    margin-left: auto;
+  }
+  .footer_text2 {
+    margin-left: auto;
+  }
+}
