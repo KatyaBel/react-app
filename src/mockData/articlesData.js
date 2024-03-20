@@ -1,11 +1,17 @@
-export const title =
+import pict1 from "../img/articles/1.png";
+import pict2 from "../img/articles/2.png";
+import pict3 from "../img/articles/3.png";
+import pict4 from "../img/articles/4.png";
+import pict5 from "../img/articles/5.png";
+
+const title =
     "Многое Происходит, Мы Ведем об Этом Блог.";
-export const cardsData = [
+const cardsData = [
     {
         description: "GPT-4 и Openai – это будущее. Давайте разберемся, как это?",
         date: "Сент 26, 2021",
         illustration: {
-            src: "img/articles/1.png",
+            src: pict1,
             alt: "art1"
         }
     },
@@ -13,7 +19,7 @@ export const cardsData = [
         description: "GPT-4 и Openai – это будущее. Давайте разберемся, как это?",
         date: "Сент 26, 2021",
         illustration: {
-            src: "img/articles/2.png",
+            src: pict2,
             alt: "art2"
         }
     },
@@ -21,7 +27,7 @@ export const cardsData = [
         description: "GPT-4 и Openai – это будущее. Давайте разберемся, как это?",
         date: "Сент 26, 2021",
         illustration: {
-            src: "img/articles/3.png",
+            src: pict3,
             alt: "art3"
         }
     },
@@ -29,7 +35,7 @@ export const cardsData = [
         description: "GPT-4 и Openai – это будущее. Давайте разберемся, как это?",
         date: "Сент 26, 2021",
         illustration: {
-            src: "img/articles/4.png",
+            src: pict4,
             alt: "art4"
         }
     },
@@ -37,7 +43,7 @@ export const cardsData = [
         description: "GPT-4 и Openai – это будущее. Давайте разберемся, как это?",
         date: "Сент 26, 2021",
         illustration: {
-            src: "img/articles/5.png",
+            src: pict5,
             alt: "art5"
         }
     }

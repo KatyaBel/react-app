@@ -1,22 +1,28 @@
+import brand1 from "../img/brands/google.svg";
+import brand2 from "../img/brands/slack.svg";
+import brand3 from "../img/brands/atlassian.svg";
+import brand4 from "../img/brands/dropbox.svg";
+import brand5 from "../img/brands/shopify.svg";
+
 export const brandsData = [
     {
-        src: "img/brands/google.svg",
+        src: brand1,
         alt: "google"
     },
     {
-        src: "img/brands/slack.svg",
+        src: brand2,
         alt: "slack"
     },
     {
-        src: "img/brands/atlassian.svg",
+        src: brand3,
         alt: "atlassian"
     },
     {
-        src: "img/brands/dropbox.svg",
+        src: brand4,
         alt: "dropbox"
     },
     {
-        src: "img/brands/shopify.svg",
+        src: brand5,
         alt: "shopify"
     }
 ]

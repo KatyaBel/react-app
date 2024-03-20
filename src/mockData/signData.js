@@ -1,8 +1,13 @@
-export const title =
+const header =
     "Зарегистрируйтесь и начните исследовать безграничные возможности.";
-export const signButton =
+const button =
     "Начать";
+const link = {
+    href: "#",
+    title: "Запросить ранний доступ"
+}
 export const signData = {
-    title,
-    signButton
+    header,
+    button,
+    link
 }

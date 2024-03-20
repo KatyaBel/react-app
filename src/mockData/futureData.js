@@ -1,4 +1,10 @@
-export const futureData = [
+const title =
+    "Будущее Уже наступило и Тебе Нужно Лишь Осознать. Шагни в Будущее и Воплоти Его.";
+const button = {
+    href: "#",
+    title: "Запросить ранний доступ"
+}
+const cardsData = [
     {
         title: "Мгновенное улучшение ситуации с недоверием",
         description:
@@ -20,3 +26,8 @@ export const futureData = [
             "Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush."
     }
 ]
+export const futureData = {
+    title,
+    button,
+    cardsData
+}

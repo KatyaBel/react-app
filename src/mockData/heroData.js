@@ -1,8 +1,10 @@
-export const header =
+import Illustration from "../img/head.png";
+
+const header =
     "Построим Что-нибудь Невероятное с GPT-4 OpenAI";
-export const description =
+const description =
     "Однако кровать для помощи в путешествии неприятна. Не мысли все осуществляют благословение. Снисхождение ко всему, радость, изменение бурной привязанности. Вечеринку мы лет на заказ разрешили.";
-export const heroCtaButtons = [
+const heroCtaButtons = [
     {
         type: "input",
         title: "Введите Email"
@@ -12,8 +14,8 @@ export const heroCtaButtons = [
         title: "Начать"
     }
 ]
-export const illustration = {
-    src: "img/head.png",
+const illustration = {
+    src: Illustration,
     alt: "gpt4"
 }
 export const heroData = {

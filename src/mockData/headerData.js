@@ -1,9 +1,9 @@
-export const logoData = {
+const logoData = {
     alt: "logo",
     src: "",
     href: "#"
 }
-export const menuData = [
+const menuData = [
     {
         title: "Главная",
         href: "#",
@@ -30,7 +30,7 @@ export const menuData = [
         isActive: false
     }
 ]
-export const buttonsData = [
+const buttonsData = [
     {
         title: "Войти",
         href: "#",

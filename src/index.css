@@ -33,9 +33,10 @@ img {
   display: none !important;
 }
 body {
-  //background: #040d1a;
+  background: #040d1a;
   background-size: cover;
   overflow-x: hidden;
+  color: white !important;
 }
 .page {
   max-width: 1400px;
@@ -405,6 +406,7 @@ body {
   font-size: 12px;
   border-bottom: 1px solid transparent;
   margin-left: 0;
+  color: black;
 }
 .sign_text1:hover {
   cursor: pointer;
@@ -413,6 +415,7 @@ body {
 .sign_text2 {
   font-family: "ManropeExtraBold", sans-serif;
   font-size: 24px;
+  color: black;
 }
 .sign_right {
   margin-right: 20px;
@@ -459,6 +462,10 @@ body {
   flex-grow: 1;
   position: relative;
 }
+.articles_top .card_main .card .link {
+  position: absolute;
+  bottom: 25px;
+}
 .articles_top .cards_right {
   display: flex;
   flex-wrap: wrap;
@@ -496,10 +503,6 @@ body {
 }
 .articles_content .link:hover {
   border-color: white;
-}
-.articles_content .card_read {
-  position: absolute;
-  bottom: 25px;
 }
 
 /*Footer*/
@@ -671,7 +674,7 @@ body {
   .articles_top .card_main {
     margin-bottom: 0;
   }
-  .articles_content .card_read {
+  .articles_top .card_main .card .link {
     position: relative;
     bottom: 0;
   }

@@ -1,14 +1,14 @@
-export const title =
+const title =
     "Хотите Шагнуть в Будущее Раньше Других?";
-export const footerButton =
+const footerButton =
     "Запросить ранний доступ";
-export const logoData = {
+const logoData = {
     alt: "logo",
     src: "img/logo.svg",
 }
-export const locationData =
+const locationData =
     "ул. Профессора Поздеева, 13, к.Г, Пермь, Пермский край, 614013. Все права защищены";
-export const cardsData = [
+const cardsData = [
     {
         title: "Ссылки",
         links: [
