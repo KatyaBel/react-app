@@ -1,10 +1,14 @@
+import logo from "../img/logo.svg";
+
 const title =
     "Хотите Шагнуть в Будущее Раньше Других?";
-const footerButton =
-    "Запросить ранний доступ";
+const footerButton = {
+    href: "#",
+    title: "Запросить ранний доступ"
+}
 const logoData = {
     alt: "logo",
-    src: "img/logo.svg",
+    src: logo,
 }
 const locationData =
     "ул. Профессора Поздеева, 13, к.Г, Пермь, Пермский край, 614013. Все права защищены";

@@ -7,7 +7,6 @@ import Expect from "../components/Expect";
 import Sign from "../components/Sign";
 import Articles from "../components/Articles";
 import Footer from "../components/Footer";
-import Burger from "../components/Burger";
 
 const Home = () => {
     const stylesCopyright = {
@@ -25,7 +24,6 @@ const Home = () => {
             <Sign/>
             <Articles/>
             <Footer/>
-            <Burger/>
             <p className="footer_text2" style={stylesCopyright}>© 2023 GPT-3. Все права защищены.</p>
         </>
     );

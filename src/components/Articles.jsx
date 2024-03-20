@@ -27,7 +27,6 @@ const ArticlesTopTemplate = ({articles}) => {
             </div>
             <div className="cards_right">
                 {articles.map((article, index) => {
-                    console.log(index);
                     if (index > 0 && index < 5) {
                         return <ArticleTemplate article={article}/>
                     }
